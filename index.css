@@ -1,0 +1,583 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 8vh;
+    width: 100%;
+    background-color: rgb(32, 30, 30);
+    
+
+}
+
+nav .nvb .lilist {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-top: 12px;
+
+    
+
+    
+}
+nav .nvb .lilist a{
+    text-decoration: none;
+    padding: 10px;
+    
+}
+.lilist li a{
+    color: rgb(189, 185, 185);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.lilist li {
+    padding-right: 10px;
+}
+
+.ad01 {
+    height: 6vh;
+    width: 100%;
+    background-color: rgb(53, 51, 51);
+    color: azure;
+    text-align: center;
+}
+
+.ad01 p{
+    padding: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    
+}
+.ad01 p span a{
+    text-decoration: none;
+    color: rgb(12, 103, 193);
+}
+
+
+main {
+    margin-top: 0px;
+    width: 100%; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+main img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -79px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.img-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    bottom: 3%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    
+}
+
+.img-text h1 {
+    font-size: 2em;
+}
+
+.img-text h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.img-text a {
+    display: inline-block;
+    background-color: black;
+    color: blue;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+section {
+    background: url("https://www.apple.com/v/home/bk/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_large_2x.jpg") center center/cover;
+    height: 100vh; 
+    width: 100%; 
+    text-align: center;
+    color: black;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -20px;
+}
+
+section h1{
+    font-size: 3em;
+    text-align: center; 
+}
+section h3{
+    font-size: 1.5em;
+    text-align: center; 
+}
+section a{
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+section1 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    color: black;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+section1 .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+section1 h1{
+    color: white;
+    font-size: 3rem;
+    z-index: 1;
+}
+section1 h4{
+    color: white;
+    z-index: 1;
+}
+section1 h2{
+    color: white;
+    z-index: 1;
+}
+
+section1 .button-container {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px;
+    z-index: 1;
+}
+section1 #learnmore,
+section1 #buy {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+section2 div {
+    flex: 0 0 calc(50% - 2px); /* Two columns with a gap of 2px */
+    margin-bottom: 4px; /* Adjust margin between items */
+    position: relative;
+}
+
+section2 div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section2 div .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    opacity: 0.8;
+    padding: 20px;
+    z-index: 1;
+    position: absolute;
+}
+
+section2 div .text-overlay h2,
+section2 div .text-overlay h4 {
+    margin: 5px 0;
+    color: black;
+    font-size: 2em;
+}
+
+section2 div .button-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+section2 div .button-container button {
+    background-color: transparent;
+    color: blue;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+
+/* CSS styles for first div */
+section2 div:nth-child(1) .text-overlay h2 {
+    color: black;
+    margin-top: -60%;
+    font-size: large;
+    
+}
+
+section2 div:nth-child(1) .text-overlay h4 {
+    color: black;
+    margin-top: -0%;
+    font-size: medium;
+    margin-top: -15px;
+}
+
+
+
+
+/* CSS styles for second div */
+section2 div:nth-child(2) .text-overlay h2 {
+    color: black;
+    margin-top: -60%;
+    font-size: large;
+
+}
+
+section2 div:nth-child(2) .text-overlay h4 {
+    color: black;
+    margin-top: -3%;
+    font-size: medium;
+    margin-top: -15px;
+}
+
+/* CSS styles for third div */
+section2 div:nth-child(3) .text-overlay h2 {
+    color: rgb(255, 255, 255);
+    margin-top: -50%;
+    font-size: large;
+}
+
+section2 div:nth-child(3) .text-overlay h4 {
+    color: white;
+    margin-top: -0%;
+    font-size: medium;
+    margin-top: -20px;
+}
+
+/* CSS styles for fourth div */
+section2 div:nth-child(4) .text-overlay h2 {
+    color:black;
+    margin-top: -60%;
+    font-size: large;
+    margin-top: -100px;
+}
+
+section2 div:nth-child(4) .text-overlay h4 {
+    color: black;
+    margin-top: -10px;
+}
+
+/* CSS styles for fifth div */
+section2 div:nth-child(5) .text-overlay h2 {
+    color: black;
+    margin-top: -70%;
+    font-size: large;
+}
+
+section2 div:nth-child(5) .text-overlay h4 {
+    color: black;
+    font-size: medium;
+    
+    margin-top: -20px;
+}
+
+/* CSS styles for sixth div */
+section2 div:nth-child(6) .text-overlay h2 {
+    color: black;
+    margin-top: -50%;
+    font-size: large;
+}
+
+section2 div:nth-child(6) .text-overlay h4 {
+    color: black;
+    font-size: medium;
+    margin-top: -15px;
+}
+
+
+/* CSS styles for button container */
+section2 div .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 190px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+section2 div .button-container button {
+    background-color: transparent;
+    color: blue;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: -5px;
+    cursor: pointer;
+    z-index: 1;
+   
+    
+}
+
+
+
+
+ footer{
+    height: 150vh;
+    width: 100%;
+    background-color: rgb(245,245,247) ;
+    color: rgb(139, 135, 135);
+    padding-top: 20px;
+}
+footer p{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    font-size: 14px;
+}
+
+footer .horiline{
+    border: none;
+    border-top: 1px solid;
+    margin-bottom: 15px;
+    
+}
+
+footer .flinks{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 120px;
+    margin-right: 120px;
+    
+
+}
+
+footer .flinks .c1 li, footer .flinks .c2 li,footer .flinks .c3 li,footer .flinks .c4 li,footer .flinks .c5 li {
+    padding-top: 10px;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+footer .bottom {
+    display: flex;
+}
+
+footer .bottom .rs{
+    padding-right: 0px;
+    padding-left: 120px;
+}
+
+
+/* For screens up to 376px */
+@media screen and (max-width: 376px) {
+    /* Adjustments for navigation */
+    nav {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000; /* Ensures the navbar is on top of other content */
+    }
+    nav .nvb {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .nvb .lilist {
+        padding-top: 0;
+    }
+
+    .lilist li {
+        padding: 5px 0;
+    }
+
+    /* Adjustments for main section */
+    main {
+        margin-top: 20px;
+    }
+
+    main img {
+        margin-top: -19%;
+        width: 140vh;
+        height: 100%;
+        margin-right: -100px;
+    }
+
+    .image-container {
+        height: 60vh;
+    }
+
+    .img-text {
+        width: 100%;
+        top: 10%;
+        right: 10%;
+    }
+
+    /* Adjustments for section 1 */
+    section1 .bg-video {
+        height: 60vh;
+    }
+
+    section1 .button-container {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 20px;
+    }
+    section.section2 img {
+        max-width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: -30%;
+    }
+}
+
+/* For screens between 377px and 1000px */
+@media screen and (min-width: 377px) and (max-width: 1000px) {
+    /* Adjustments for navigation */
+    nav .nvb {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .nvb .lilist {
+        padding-top: 0;
+    }
+
+    .lilist li {
+        padding: 5px 0;
+    }
+
+    /* Adjustments for main section */
+    main {
+        margin-top: 20px;
+    }
+
+    main img {
+        margin-top: 0;
+        height: auto;
+    }
+
+    .image-container {
+        height: 50vh;
+    }
+
+    .img-text {
+        top: 50%;
+    }
+
+    /* Adjustments for section 1 */
+    section1 .bg-video {
+        height: 60vh;
+    }
+
+    section1 .button-container {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 20px;
+    }
+}
+
+/* For screens between 1001px and 1200px */
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    /* Adjustments for navigation */
+    nav .nvb {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .nvb .lilist {
+        padding-top: 0;
+    }
+
+    .lilist li {
+        padding: 5px 0;
+    }
+
+    /* Adjustments for main section */
+    main {
+        margin-top: 20px;
+    }
+
+    main img {
+        margin-top: 0;
+        height: auto;
+    }
+
+    .image-container {
+        height: 50vh;
+    }
+
+    .img-text {
+        top: 50%;
+    }
+
+    /* Adjustments for section 1 */
+    section1 .bg-video {
+        height: 60vh;
+    }
+
+    section1 .button-container {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 20px;
+    }
+}
